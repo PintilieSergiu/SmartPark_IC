@@ -1,8 +1,10 @@
 package IC.SmartPark.Authentication;
 
 
+import IC.SmartPark.User.Role;
 import IC.SmartPark.User.UserService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -14,12 +16,12 @@ public class AuthenticationController {
     private final AuthenticationService authenticationService;
     private final UserService userService;
     @PostMapping("/register")
-    ResponseEntity<AuthenticationResponse   > register(@RequestParam String firstName,
-                           @RequestParam String lastName,
-                           @RequestParam String email,
-                           @RequestParam String password,
-                           @RequestParam String role){
-        return ResponseEntity.ok(authenticationService.register(firstName,lastName,email,password,role));
+    ResponseEntity register(@RequestParam("firstName") String firstName,
+                           @RequestParam("lastName") String lastName,
+                           @RequestParam("email") String email,
+                           @RequestParam("password") String password){
+        authenticationService.register(firstName,lastName,email,password, Role.USER.toString());
+        return new ResponseEntity<>("succes", HttpStatus.OK);
 
     }
 
