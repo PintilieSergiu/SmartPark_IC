@@ -14,4 +14,5 @@ import java.util.Collection;
 @NoArgsConstructor
 public class AuthenticationResponse {
     private String token;
+    private String status;
 }
