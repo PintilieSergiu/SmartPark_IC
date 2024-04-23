@@ -130,4 +130,12 @@ public class LoginActivity extends AppCompatActivity {
         });
         queue.add(jsonObjectRequest);
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent i=new Intent(LoginActivity.this,MainActivity.class);
+        startActivity(i);
+        finish();
+        super.onBackPressed();
+    }
 }

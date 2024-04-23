@@ -70,6 +70,13 @@ public class BarCodeActivity extends AppCompatActivity {
         }
 
         myBitmap.setPixels(allpixels, 0, myBitmap.getWidth(), 0, 0, myBitmap.getWidth(), myBitmap.getHeight());
+    }
 
+    @Override
+    public void onBackPressed() {
+        Intent i=new Intent(BarCodeActivity.this,MainActivity.class);
+        startActivity(i);
+        finish();
+        super.onBackPressed();
     }
 }

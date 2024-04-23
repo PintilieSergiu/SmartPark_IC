@@ -1,11 +1,18 @@
 package com.ic.smartpark;
 
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.net.wifi.SupplicantState;
+import android.net.wifi.WifiInfo;
+import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -35,7 +42,6 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_register);
-
         firstName=findViewById(R.id.firstName);
         lastName=findViewById(R.id.lastName);
         email=findViewById(R.id.email);
@@ -150,5 +156,13 @@ public class RegisterActivity extends AppCompatActivity {
             }
         };
         queue.add(stringRequest);
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent i=new Intent(RegisterActivity.this,MainActivity.class);
+        startActivity(i);
+        finish();
+        super.onBackPressed();
     }
 }

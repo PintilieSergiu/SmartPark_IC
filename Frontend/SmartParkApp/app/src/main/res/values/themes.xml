@@ -5,7 +5,12 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
         <item name="colorPrimary">@color/gradientPrimaryColor</item>
         <item name="colorSecondary">@color/gradientSecondaryColor</item>
+        <item name="android:background">@drawable/gradient_background</item>
     </style>
 
-    <style name="Theme.SmartPark" parent="Base.Theme.SmartPark" />
+    <style name="Theme.SmartPark" parent="Base.Theme.SmartPark">
+<!--        <item name="colorPrimary">#212323</item>-->
+        <!--<item name="colorSecondary">#7E8181</item>-->
+<!--        <item name="android:background">@drawable/gradient_background_dark</item>-->
+    </style>
 </resources>
