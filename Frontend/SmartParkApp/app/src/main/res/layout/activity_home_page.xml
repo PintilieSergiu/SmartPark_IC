@@ -8,30 +8,570 @@
     android:background="@drawable/gradient_background"
     tools:context=".HomePageActivity">
 
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="300dp"
-        android:layout_height="100dp"
-        android:onClick="logout"
-        android:text="Log Out!"
-        android:textSize="60sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="560dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/parking_background"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.345" />
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/zxing_transparent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/A1"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="6dp"
+                android:rotation="-45"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/empty_parking_spot"
+                tools:ignore="NestedWeights" />
+            <ImageView
+                android:id="@+id/A2"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:rotation="-45"
+                app:srcCompat="@drawable/empty_parking_spot" />
+            <ImageView
+                android:id="@+id/A3"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:rotation="-45"
+                app:srcCompat="@drawable/empty_parking_spot" />
+            <ImageView
+                android:id="@+id/A4"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:rotation="-45"
+                app:srcCompat="@drawable/empty_parking_spot" />
+            <ImageView
+                android:id="@+id/A5"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:rotation="-45"
+                app:srcCompat="@drawable/empty_parking_spot" />
+            <ImageView
+                android:id="@+id/A6"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:rotation="-45"
+                app:srcCompat="@drawable/empty_parking_spot" />
+            <ImageView
+                android:id="@+id/A7"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:rotation="-45"
+                app:srcCompat="@drawable/empty_parking_spot" />
+            <ImageView
+                android:id="@+id/A8"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:rotation="-45"
+                app:srcCompat="@drawable/empty_parking_spot" />
+            <ImageView
+                android:id="@+id/A9"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:rotation="-45"
+                app:srcCompat="@drawable/empty_parking_spot" />
+            <ImageView
+                android:id="@+id/A10"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="6dp"
+                android:rotation="-45"
+                app:srcCompat="@drawable/empty_parking_spot" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/zxing_transparent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="40dp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/white_stripes"
+                tools:ignore="NestedWeights" />
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="40dp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/white_stripes"
+                tools:ignore="NestedWeights" />
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="40dp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/white_stripes"
+                tools:ignore="NestedWeights" />
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="40dp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/white_stripes"
+                tools:ignore="NestedWeights" />
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="40dp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/white_stripes"
+                tools:ignore="NestedWeights" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/zxing_transparent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/B1"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="6dp"
+                android:rotation="45"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/empty_parking_spot"
+                tools:ignore="NestedWeights" />
+            <ImageView
+                android:id="@+id/B2"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:rotation="45"
+                app:srcCompat="@drawable/empty_parking_spot" />
+            <ImageView
+                android:id="@+id/B3"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:rotation="45"
+                app:srcCompat="@drawable/empty_parking_spot" />
+            <ImageView
+                android:id="@+id/B4"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:rotation="45"
+                app:srcCompat="@drawable/empty_parking_spot" />
+            <ImageView
+                android:id="@+id/B5"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:rotation="45"
+                app:srcCompat="@drawable/empty_parking_spot" />
+            <ImageView
+                android:id="@+id/B6"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:rotation="45"
+                app:srcCompat="@drawable/empty_parking_spot" />
+            <ImageView
+                android:id="@+id/B7"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:rotation="45"
+                app:srcCompat="@drawable/empty_parking_spot" />
+            <ImageView
+                android:id="@+id/B8"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:rotation="45"
+                app:srcCompat="@drawable/empty_parking_spot" />
+            <ImageView
+                android:id="@+id/B9"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:rotation="45"
+                app:srcCompat="@drawable/empty_parking_spot" />
+            <ImageView
+                android:id="@+id/B10"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="6dp"
+                android:rotation="45"
+                app:srcCompat="@drawable/empty_parking_spot" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/zxing_transparent"
+            android:layout_weight="0.2">
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/zxing_transparent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/C1"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="6dp"
+                android:rotation="-45"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/empty_parking_spot"
+                tools:ignore="NestedWeights" />
+            <ImageView
+                android:id="@+id/C2"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:rotation="-45"
+                app:srcCompat="@drawable/empty_parking_spot" />
+            <ImageView
+                android:id="@+id/C3"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:rotation="-45"
+                app:srcCompat="@drawable/empty_parking_spot" />
+            <ImageView
+                android:id="@+id/C4"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:rotation="-45"
+                app:srcCompat="@drawable/empty_parking_spot" />
+            <ImageView
+                android:id="@+id/C5"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:rotation="-45"
+                app:srcCompat="@drawable/empty_parking_spot" />
+            <ImageView
+                android:id="@+id/C6"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:rotation="-45"
+                app:srcCompat="@drawable/empty_parking_spot" />
+            <ImageView
+                android:id="@+id/C7"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:rotation="-45"
+                app:srcCompat="@drawable/empty_parking_spot" />
+            <ImageView
+                android:id="@+id/C8"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:rotation="-45"
+                app:srcCompat="@drawable/empty_parking_spot" />
+            <ImageView
+                android:id="@+id/C9"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:rotation="-45"
+                app:srcCompat="@drawable/empty_parking_spot" />
+            <ImageView
+                android:id="@+id/C10"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="6dp"
+                android:rotation="-45"
+                app:srcCompat="@drawable/empty_parking_spot" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/zxing_transparent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="40dp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/white_stripes"
+                tools:ignore="NestedWeights" />
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="40dp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/white_stripes"
+                tools:ignore="NestedWeights" />
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="40dp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/white_stripes"
+                tools:ignore="NestedWeights" />
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="40dp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/white_stripes"
+                tools:ignore="NestedWeights" />
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="40dp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/white_stripes"
+                tools:ignore="NestedWeights" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/zxing_transparent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/D1"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="6dp"
+                android:rotation="45"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/empty_parking_spot"
+                tools:ignore="NestedWeights" />
+            <ImageView
+                android:id="@+id/D2"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:rotation="45"
+                app:srcCompat="@drawable/empty_parking_spot" />
+            <ImageView
+                android:id="@+id/D3"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:rotation="45"
+                app:srcCompat="@drawable/empty_parking_spot" />
+            <ImageView
+                android:id="@+id/D4"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:rotation="45"
+                app:srcCompat="@drawable/empty_parking_spot" />
+            <ImageView
+                android:id="@+id/D5"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:rotation="45"
+                app:srcCompat="@drawable/empty_parking_spot" />
+            <ImageView
+                android:id="@+id/D6"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:rotation="45"
+                app:srcCompat="@drawable/empty_parking_spot" />
+            <ImageView
+                android:id="@+id/D7"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:rotation="45"
+                app:srcCompat="@drawable/empty_parking_spot" />
+            <ImageView
+                android:id="@+id/D8"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:rotation="45"
+                app:srcCompat="@drawable/empty_parking_spot" />
+            <ImageView
+                android:id="@+id/D9"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:rotation="45"
+                app:srcCompat="@drawable/empty_parking_spot" />
+            <ImageView
+                android:id="@+id/D10"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="6dp"
+                android:rotation="45"
+                app:srcCompat="@drawable/empty_parking_spot" />
+        </LinearLayout>
+
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/getCode"
-        android:layout_width="300dp"
-        android:layout_height="100dp"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
         android:layout_marginTop="20dp"
         android:onClick="logout"
         android:text="Get Code!"
-        android:textSize="50sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:onClick="logout"
+        android:text="Log Out!"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.696" />
 </androidx.constraintlayout.widget.ConstraintLayout>
