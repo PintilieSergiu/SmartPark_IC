@@ -26,7 +26,7 @@ public class SecurityConfig {
                 .csrf()
                 .disable()
                 .authorizeHttpRequests()
-                .requestMatchers("/register","/","/test","/authenticate","/getAvailableParkingSpot")
+                .requestMatchers("/register","/","/test","/authenticate","/getAvailableParkingSpot","/getParkingInfo","/modifyEmptyParking","/modifyBookedParking")
                 .permitAll()
                 .and()
                 .sessionManagement()

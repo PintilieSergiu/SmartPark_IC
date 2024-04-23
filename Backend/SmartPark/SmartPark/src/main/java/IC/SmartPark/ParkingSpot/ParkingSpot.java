@@ -23,6 +23,10 @@ public class ParkingSpot {
         this.paidParkingSpot = PaidParkingSpot;
     }
 
+    public int getId() {
+        return id;
+    }
+
     public String getName() {
         return name;
     }

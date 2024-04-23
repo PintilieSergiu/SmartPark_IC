@@ -2,9 +2,10 @@ package IC.SmartPark.ParkingSpot;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+import java.util.Map;
 
 @RestController
 public class ParkingSpotController {
@@ -18,5 +19,20 @@ public class ParkingSpotController {
     @GetMapping("/getAvailableParkingSpot")
     public String getAvailableParkingSpot() {
         return parkingSpotService.getAvalableParkingSpot().getName();
+    }
+
+    @GetMapping("/getParkingInfo")
+    public List<Map<String, Boolean>> getParkingInfo() {
+        return parkingSpotService.getAllParkingSpotsInformation();
+    }
+
+    @PostMapping("/modifyEmptyParking")
+    public void modifyEmptyParking(@RequestParam String parkingSpotName) {
+        parkingSpotService.modifyEmptyParkingSpot(parkingSpotName);
+    }
+
+    @PostMapping("/modifyBookedParking")
+    public String modifyBookedParking(@RequestParam String parkingSpotName) {
+        return parkingSpotService.modifyBookedParkingSpot(parkingSpotName);
     }
 }
