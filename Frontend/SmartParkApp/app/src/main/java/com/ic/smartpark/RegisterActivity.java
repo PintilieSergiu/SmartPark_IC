@@ -121,8 +121,9 @@ public class RegisterActivity extends AppCompatActivity {
             return;
         }
         RequestQueue queue= Volley.newRequestQueue(RegisterActivity.this);
-        String url="http://192.168.1.228:8080/register";
-        StringRequest stringRequest=new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
+        String url_home="http://192.168.1.228:8080/register";
+        String url_hotspot="http://192.168.16.153:8080/register";
+        StringRequest stringRequest=new StringRequest(Request.Method.POST, url_hotspot, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 if(response.equalsIgnoreCase("succes")) {

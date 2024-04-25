@@ -97,8 +97,9 @@ public class LoginActivity extends AppCompatActivity {
         JSONObject requestData=new JSONObject(params);
 
         RequestQueue queue= Volley.newRequestQueue(LoginActivity.this);
-        String url="http://192.168.1.228:8080/authenticate";
-        JsonObjectRequest jsonObjectRequest=new JsonObjectRequest(Request.Method.POST, url, requestData, new Response.Listener<JSONObject>() {
+        String url_home="http://192.168.1.228:8080/authenticate";
+        String url_hotspot="http://192.168.16.153:8080/authenticate";
+        JsonObjectRequest jsonObjectRequest=new JsonObjectRequest(Request.Method.POST, url_hotspot, requestData, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject jsonObject) {
                 try {
@@ -120,7 +121,6 @@ public class LoginActivity extends AppCompatActivity {
                 } catch (JSONException e) {
                     throw new RuntimeException(e);
                 }
-
             }
         }, new Response.ErrorListener() {
             @Override

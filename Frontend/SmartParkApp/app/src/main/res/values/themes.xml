@@ -2,15 +2,18 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.SmartPark" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-        <item name="colorPrimary">@color/gradientPrimaryColor</item>
-        <item name="colorSecondary">@color/gradientSecondaryColor</item>
-        <item name="android:background">@drawable/gradient_background</item>
+        <item name="colorPrimary">@color/primaryColorLight</item>
+        <item name="colorSecondary">@color/secondaryColorLight</item>
+        <item name="materialButtonStyle">@style/Widget.AppCompat.Button</item>
+        <item name="android:windowBackground">@drawable/gradient_background</item>
+        <item name="android:textColor">@color/accentColorLight</item>
+
     </style>
 
-    <style name="Theme.SmartPark" parent="Base.Theme.SmartPark">
-<!--        <item name="colorPrimary">#212323</item>-->
-        <!--<item name="colorSecondary">#7E8181</item>-->
-<!--        <item name="android:background">@drawable/gradient_background_dark</item>-->
+    <style name="Widget.AppCompat.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/accentColorLight</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:gravity">center</item>
     </style>
 </resources>
